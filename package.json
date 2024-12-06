@@ -1,10 +1,10 @@
 {
-  "name": "ismobil-to-window",
-  "version": "1.0.0",
+  "name": "isphone-to-window",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cd .. && node ismobil-to-window/index.js"
+    "postinstall": "cd .. && node isphone-to-window/index.js"
   },
   "keywords": [],
   "author": "",

@@ -2,16 +2,16 @@ const fs = require('fs');
 const path = require('path');
 
 const scriptToInsert =
-    `    /* * * * * * * * * * ismobil-to-window * * * * * * * * * */
+    `    <!-- * * * * * * * * * * isphone-to-window * * * * * * * * * * -->
     <script>
         const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        const isMobileUserAgent = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+        const isPhoneUserAgent = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
         const isLimitedHardware = navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4;
-        const isMobileDevice = isTouchDevice || isMobileUserAgent || isLimitedHardware;
-        window.isMobile = isMobileDevice;
+        const isPhoneDevice = isTouchDevice || isPhoneUserAgent || isLimitedHardware;
+        window.isPhone = isPhoneDevice;
     </script>
-    /* * * * * * * * * * ismobil-to-window * * * * * * * * * */
+    <!-- * * * * * * * * * * isphone-to-window * * * * * * * * * * -->
 </head>`;
 
 
